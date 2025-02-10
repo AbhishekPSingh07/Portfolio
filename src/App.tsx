@@ -2,6 +2,9 @@ import './App.css';
 import styled from 'styled-components';
 import { Layout } from './components/Layout';
 import { BrowserRouter as Router ,useLocation } from 'react-router-dom'; // Import Router and useLocation
+import { HeroSection } from './components/sections/HeroSection';
+import { AboutSection } from './components/sections/AboutSection';
+import { JobsSection } from './components/sections/JobsSection';
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -22,7 +25,9 @@ const LayoutWrapper = () => {
   return (
     <Layout isHome={isHome}>
       <StyledMainContainer className="fillHeight">
-        <div>Some text</div>
+        <HeroSection />
+        <AboutSection />
+        <JobsSection />
       </StyledMainContainer>
     </Layout>
   );
