@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useRef, KeyboardEvent } from 'react';
 import styled from "styled-components";
 import { KEY_CODES } from '../../utils/utility';
+import { jobsData } from '../../assets/experience';
 
-interface JobData {
-    frontmatter: {
-      title: string;
-      company: string;
-      location: string;
-      range: string;
-      url: string;
-    };
-    html: string;
-}
+// interface JobData {
+//     frontmatter: {
+//       title: string;
+//       company: string;
+//       location: string;
+//       range: string;
+//       url: string;
+//     };
+//     html: string;
+// }
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -171,29 +172,29 @@ const StyledTabPanel = styled.div`
 `;
 
 export const JobsSection: React.FC = () => {
-    const jobsData: JobData[] = [
-      // Example data, replace with real data fetching or API
-      {
-        frontmatter: {
-          title: 'Software Engineer',
-          company: 'Tech Corp',
-          location: 'New York',
-          range: 'Jan 2020 - Present',
-          url: 'https://techcorp.com'
-        },
-        html: '<p>Developed innovative software solutions...</p>',
-      },
-      {
-        frontmatter: {
-          title: 'Junior Developer',
-          company: 'Startup Inc',
-          location: 'San Francisco',
-          range: 'Mar 2018 - Dec 2019',
-          url: 'https://startupinc.com'
-        },
-        html: '<p>Worked on web applications...</p>',
-      },
-    ];
+    // const jobsData: JobData[] = [
+    //   // Example data, replace with real data fetching or API
+    //   {
+    //     frontmatter: {
+    //       title: 'Software Engineer',
+    //       company: 'Tech Corp',
+    //       location: 'New York',
+    //       range: 'Jan 2020 - Present',
+    //       url: 'https://techcorp.com'
+    //     },
+    //     html: '<p>Developed innovative software solutions...</p>',
+    //   },
+    //   {
+    //     frontmatter: {
+    //       title: 'Junior Developer',
+    //       company: 'Startup Inc',
+    //       location: 'San Francisco',
+    //       range: 'Mar 2018 - Dec 2019',
+    //       url: 'https://startupinc.com'
+    //     },
+    //     html: '<p>Worked on web applications...</p>',
+    //   },
+    // ];
   
     const [activeTabId, setActiveTabId] = useState<number>(0);
     const [tabFocus, setTabFocus] = useState<number | null>(null);

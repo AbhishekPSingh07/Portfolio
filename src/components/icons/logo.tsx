@@ -1,24 +1,20 @@
 export const IconLogo: React.FC = () => {
-    return (
-<svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+  return (
+    <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
       <title>Logo</title>
-      <g transform="translate(-8.000000, -2.000000)">
-        <g transform="translate(11.000000, 5.000000)">
+      <g transform="translate(-8,-2)">
+        <g transform="translate(11,5)">
           <polygon
             id="Shape"
             stroke="currentColor"
-            strokeWidth="5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             points="39 0 0 22 0 67 39 90 78 68 78 23"
           />
-          <path
-            d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
-            fill="currentColor"
-          />
+          <path fill="currentColor" stroke-width="1" stroke-linejoin="round" d="M 57 66 L 49 66 L 44 52 L 32 52 L 28 66 L 20 66 L 35 19 L 41 19 L 57 66 Z M 43 45 L 38.7514 30.0523 C 38.4853 29.2347 38.3015 28.2599 38 26 L 38 26 C 37.9604 28.0809 37.7693 29.0243 37.4452 29.958 L 34 45 L 43 45 Z"/>
         </g>
       </g>
     </svg>
-    )
-    
+  );
 };

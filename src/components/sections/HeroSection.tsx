@@ -46,7 +46,7 @@ const StyledHeroSection = styled.section`
 export const HeroSection = () => {
     const one = <h1>Hi, my name is</h1>;
     const two = <h2 className="big-heading">Abhishek Singh.</h2>;
-    const three = <h3 className="big-heading">Building innovative and impactful software.</h3>;
+    const three = <h3 className="medium-heading">Building innovative and impactful software.</h3>;
     const four = (
         <>
           <p>

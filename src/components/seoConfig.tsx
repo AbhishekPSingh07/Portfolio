@@ -1,7 +1,7 @@
 export const seoConfig = {
-    defaultTitle: "My Website",
-    defaultDescription: "This is my awesome website.",
-    siteUrl: "https://www.mywebsite.com",
-    defaultImage: "/default-image.jpg",
-    twitterUsername: "@mytwitterhandle",
+    defaultTitle: "Abhishek Singh",
+    defaultDescription: "This is my portfolio website.",
+    siteUrl: "https://abhisheksingh.click",
+    defaultImage: "../images/logo.png",
+    twitterUsername: "@SinghAbhi1205",
   };

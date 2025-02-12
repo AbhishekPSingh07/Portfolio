@@ -16,7 +16,7 @@ const Head: React.FC<HeadProps> = ({ title, description, image }) => {
   const seo = {
     title: title || seoConfig.defaultTitle,
     description: description || seoConfig.defaultDescription,
-    image: `${seoConfig.siteUrl}${image || seoConfig.defaultImage}`,
+    image: `${seoConfig.defaultImage}`,
     url: `${seoConfig.siteUrl}${pathname}`,
   };
 
